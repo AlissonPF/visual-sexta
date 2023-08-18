@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambientacao", "Ambientacao\Ambientacao.csproj", "{C15079C9-44A4-4A2C-B762-C723091EE7AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrientacaoObjetos", "OrientacaoObjetos\OrientacaoObjetos.csproj", "{9870BECA-0788-40CD-BEDF-0A3A902CA69B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C15079C9-44A4-4A2C-B762-C723091EE7AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C15079C9-44A4-4A2C-B762-C723091EE7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C15079C9-44A4-4A2C-B762-C723091EE7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C15079C9-44A4-4A2C-B762-C723091EE7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9870BECA-0788-40CD-BEDF-0A3A902CA69B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9870BECA-0788-40CD-BEDF-0A3A902CA69B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9870BECA-0788-40CD-BEDF-0A3A902CA69B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9870BECA-0788-40CD-BEDF-0A3A902CA69B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
