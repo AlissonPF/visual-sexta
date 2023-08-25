@@ -1,0 +1,13 @@
+### Listar produtos
+GET https://localhost:7236/api/produto/listar
+
+### Cadastrar produto
+POST https://localhost:7236/api/produto/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Bolacha"
+}
+
+### Procurar por nome
+GET https://localhost:7236/api/produto/buscar/Bolacha

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApi.Models;
 
 namespace WebApi.Controllers;
 
@@ -6,18 +7,40 @@ namespace WebApi.Controllers;
 [Route("api/produto")]
 public class ProdutoController : ControllerBase
 {
-    // GET: api/produto/listar
+    private static List<Produto> produtos = new List<Produto>();
+    // GET: 
     [HttpGet]
     [Route("listar")]
-    public string Listar()
+    public IActionResult Listar() => produtos.Count == 0 ? NotFound() : Ok(produtos);
+    // {
+    //      if(produtos.Count == 0)
+    //      {
+    //          return NotFound();
+    //      }
+    //      return Ok(produtos);
+
+    //      return produtos.Count == 0 ? NotFound() : Ok(produtos);
+    // }
+
+    [HttpGet]
+    [Route("buscar/{nome}")]
+    public IActionResult Buscar([FromRoute] string nome)
     {
-        return "Hello World de uma API em C# com Watch";
+        foreach(Produto produto in produtos)
+        {
+            if(produto.Nome == nome)
+            {
+                return Ok(produto);
+            }
+        }
+        return NotFound();
     }
 
     [HttpPost]
     [Route("cadastrar")]
-    public Produto Cadastrar(Produto produto)
+    public IActionResult Cadastrar([FromBody] Produto produto)
     {
-        return produto;
+        produtos.Add(produto);
+        return Created("", produto);
     }
 }
